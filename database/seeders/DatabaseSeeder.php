@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
         if(env('APP_DEBUG')) {
             $this->call([
                 TeamSeeder::class,
+                SplitSeeder::class,
             ]);
         }
     }
